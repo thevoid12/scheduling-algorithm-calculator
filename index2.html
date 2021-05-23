@@ -1,0 +1,160 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+</head>
+<!---------------------------------------------------------------------------------------------------------------------------------->
+<!--Main Navigation-->
+
+<!--Main Navigation-->
+<header>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
+      <a class="navbar-brand" href="#"><strong>Study OS</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index1.html">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <div class="view intro-2">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text">
+            <div class="white-text text-center wow fadeInUp">
+              <h2>This Navbar is fixed</h2>
+              <h5>It will always stay visible on the top, even when you scroll down</h5>
+              <br>
+              <p>Full page intro with background image will be always displayed in full screen mode, regardless
+                of device </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!---------------------------------------------------------------------------------------->
+<br>
+<br>
+<br>
+<div class="container my-5 z-depth-1">
+
+
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+  
+      <div class="row pr-lg-5">
+        <div class="col-md-5 mb-4">
+  
+          <div class="view">
+            <img src="22.svg" class="img-fluid" alt="smaple image">
+          </div>
+  
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <div>
+            
+            <h3 class="font-weight-bold mb-4">Scheduling Algorithm</h3>
+  
+             <!---------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CPU Scheduling Algorithm Visualization</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div>
+  <div>
+    Algorithm:
+    <form id="algorithm">
+      <input type="radio" name="algorithm" value="fcfs" checked/> FCFS<br/>
+      <input type="radio" name="algorithm" value="sjf"/> SJF<br/>
+      <input type="radio" name="algorithm" value="priority"/> Priority scheduling<br/>
+      <input type="radio" name="algorithm" value="robin"/> Round Robin
+    </form>
+    <br>
+  </div>
+    <table id="inputTable" class="table table-hover">
+        <tr>
+            <th>Process</th>
+            <th>Arrival Time</th>
+            <th>Burst Time</th>
+            <th class="servtime">Waiting Time</th>
+            <th class="priority-only">Priority</th>
+        </tr>
+        <tr>
+            <td>P0</td>
+            <td>0</td>
+            <td><input class="initial exectime" type="text" value="5" /></td>
+            <td class="servtime"></td>
+            <td class="priority-only initial"><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>P1</td>
+            <td>1</td>
+            <td><input class="initial exectime" value="3" /></td>
+            <td class="servtime"></td>
+            <td class="priority-only" ><input type="text"/></td>
+        </tr>
+    </table>
+    <div class="alligning">
+    <input  id="minus" class="btn btn-default btn-lg active" aria-pressed="true" type="button"  value="-" onclick="deleteRow();" />
+   
+    
+    <input type="button" class="btn btn-primary btn-lg active" aria-pressed="true" value="+" onclick="addRow();" />
+</div>
+<div>
+  </div>    
+    <p id="quantumParagraph" hidden>Quantum: 
+        <input style="width: 50px;" id="quantum" type="text" value="3" />
+    </p>
+    <input type="button" value="Go" class="btn btn-orange btn-rounded mx-0" onclick="draw();" />
+    <br/><br/>
+
+    <fresh>
+    </fresh>
+    <p>
+    Timer: <strong id="timer"></strong> sec
+    </p>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+  
+              
+          </div>
+        </div>
+      </div>
+  
+    </section>
+    <!--Section: Content-->
+  
+  
+  </div>
+<!------------------------------------------------------------------------------------------------------------------------------------->  
